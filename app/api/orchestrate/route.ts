@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
         'x-api-key': process.env.ZEY_AI_API_KEY || ''
       },
       body: JSON.stringify({
-        model: 'gpt-oss-120b',
+        model: 'llama-3.3-70b-versatile',
         messages: [
           { role: 'system', content: VAZI_SYSTEM_PROMPT },
           { role: 'user', content: constructedPrompt }
